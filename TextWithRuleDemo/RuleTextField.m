@@ -183,7 +183,7 @@
         return NO;
     }
     
-    NSString *patternStr = [NSString stringWithFormat:@"^(?!\\D+$).{%ld,%ld}$",self.StrMinNum-1,self.StrMaxNum-1];
+    NSString *patternStr = [NSString stringWithFormat:@"^(?!\\D+$).{%ld,%ld}$",self.StrMinNum,self.StrMaxNum];
     NSRegularExpression *regularexpression = [[NSRegularExpression alloc]
                                               initWithPattern:patternStr
                                               options:NSRegularExpressionCaseInsensitive
